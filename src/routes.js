@@ -23,6 +23,9 @@ const AssesmentObservasiReviewDetail = React.lazy(() => import('./views/Assesmen
 const Manual = React.lazy(() => import('./views/Manual/Manual'));
 const ManualDetail = React.lazy(() => import('./views/Manual/ManualDetail'));
 
+//Settings
+const AddUser = React.lazy(() => import('./views/Settings/User/AddUser'));
+
 //Master
 const Indicator = React.lazy(() => import('./views/Assesment/Master/Indicator/MasterIndicator'));
 const Question = React.lazy(() => import('./views/Assesment/Master/Question/MasterQuestion'));
@@ -60,7 +63,9 @@ const routes = [
   //Master
   {path: '/assesment/indicator', exact: true, name: 'Master Data Indikator', component: Indicator},
   {path: '/assesment/question', exact: true, name: 'Master Data Pertanyaan', component: Question},
-  {path: '/assesment/question/detail/:id', exact: true, name: 'Detail Pertanyaan', component: DetailQuestion}
+  {path: '/assesment/question/detail/:id', exact: true, name: 'Detail Pertanyaan', component: DetailQuestion},
+
+  {path: '/add-user', exact: true, name: 'Add User', component: AddUser,}
 ];
 
 export default routes;

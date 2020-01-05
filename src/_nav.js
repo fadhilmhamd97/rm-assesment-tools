@@ -20,9 +20,9 @@ export default {
       icon: 'icon-chart',
     },
     {
-      name: 'Settings',
-      url: '/settings',
-      icon: 'icon-settings',
+      name: 'Register',
+      url: '/add-user',
+      icon: 'icon-user',
     },
     {
       title: true,
